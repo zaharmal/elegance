@@ -3,4 +3,80 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+.header {
+    font-family: 'Noto Sans';
+    margin-top: 40px;
+  &__inner {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  }
+  &__cart{
+      position: relative;
+      display: inline-block;
+      padding: 5px;
+  }
+  &__cart-number {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      color: #fff;
+      background: $accent;
+  }
+  &__bottom {}
+  &__row {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+  }
+  &__content {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 625px;
+  }
+  &__title {
+      font-family: 'Playfair Display';
+      margin: 0;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 96px;
+  }
+  &__text {
+      margin-bottom: 60px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+  }
+  &__btn {}
+  &__photo {}
+}
+.menu {
+  &__list {
+      display: flex;
+  }
+  &__item + .menu__item {
+      margin-left: 30px;
+  }
+  &__link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000;
+      &:hover{
+          color: $accent;
+          transition: all .3s;
+      }
+  }
+}
+
 @import 'media';

@@ -38,3 +38,22 @@ body{
         margin: 6px 0;
     }
 }
+
+.btn{
+    display: inline-block;
+    padding: 0 33px;
+    height: 51px;
+    background: $accent;
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+    border-radius: 4px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    transition: all .2s ease-in;
+    &:hover{
+        box-shadow: 0px 4px 25px rgba(184, 13, 64, 0.671);
+        background-color: #ff3874;
+    }
+}
