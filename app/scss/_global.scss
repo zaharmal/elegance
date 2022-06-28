@@ -47,7 +47,6 @@ body{
     color: #fff;
     box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
     border-radius: 4px;
-    font-family: 'Playfair Display';
     font-weight: 400;
     font-size: 26px;
     line-height: 35px;
@@ -55,5 +54,43 @@ body{
     &:hover{
         box-shadow: 0px 4px 25px rgba(184, 13, 64, 0.671);
         background-color: #ff3874;
+    }
+}
+
+.title{
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desc{
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 14px;
+    text-align: center;
+    color: $desc;
+}
+
+.btn-outline {
+    text-align: center;
+}
+.btn-trs {
+    display: inline-block;
+    padding: 9px 40px 12px;
+    background: #FFFFFF;
+    border: 1px solid $accent;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #777;
+    &:hover{
+        background: $accent;
+        color: #fff;
+        transition: all .3s ease-in;
     }
 }
