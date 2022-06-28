@@ -125,4 +125,26 @@
   }
 }
 
+.info {
+    background: url('../images/info-1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 188px;
+  &__row {
+      padding-top: 68px;
+      display: flex;
+      justify-content: space-between;
+  }
+  &__title {
+      margin: 0;
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 100%;
+      color: #fff;
+  }
+}
+.info--duble {
+    background: url('../images/info-2.jpg');
+}
+
 @import 'media';
